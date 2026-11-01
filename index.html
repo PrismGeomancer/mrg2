@@ -591,7 +591,7 @@ window.MERGE_CONFIG = {
   rpc: "https://api.mainnet-beta.solana.com",   // Solana RPC used to read balances and supply (swap in your own for speed)
   quorum: 0.05,               // share of a coin's supply that must vote on each side
   api: "",                    // e.g. "https://api.merge.fun" -> POST /proposals
-  x: "https://x.com",         // replace with the Merge X profile
+  x: "https://x.com/Merge_coiin",         // replace with the Merge X profile
   eyes: true,                 // set false to remove the blob's face
   sizeGate: 0.5,              // target market cap may be at most 50% of host
   dayOneUnlock: 0.25,
@@ -615,7 +615,7 @@ const store = {
 };
 let toastT;
 function toast(t){ const el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('on'), 2600); }
-const openX = () => window.open(CFG.x || 'https://x.com', '_blank', 'noopener');
+const openX = () => window.open(CFG.x || 'https://x.com/Merge_coiin', '_blank', 'noopener');
 
 /* ================= SOUND (off by default) ================= */
 const Sound = (() => {
